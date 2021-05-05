@@ -45,7 +45,7 @@ export default function Card({ slotName, charge, isActive, menuType, desc }){
 		if(hours !== ""){
 			if((menuType === "SP" && hours > 3) && (menuType === "SP" && hours < 24)){
 				Swal.fire({
-				title: 'Pay Now1',
+				title: 'Pay Now',
 				text: `Your total parking hours is ${hours} your will pay P${(((hours - 3) * charge) + 40) }`,
 				icon: 'warning',
 				showCancelButton: true,
@@ -53,7 +53,7 @@ export default function Card({ slotName, charge, isActive, menuType, desc }){
 				})
 			}else if ((menuType === "MP" && hours > 3) && (menuType === "MP" && hours < 24)){
 				Swal.fire({
-				title: 'Pay Now2',
+				title: 'Pay Now',
 				text: `Your total parking hours is ${hours} your will pay P${(((hours - 3) * charge) + 40) }`,
 				icon: 'warning',
 				showCancelButton: true,
@@ -61,7 +61,7 @@ export default function Card({ slotName, charge, isActive, menuType, desc }){
 				})
 			}else if ((menuType === "LP" && hours > 3) && (menuType === "LP" && hours < 24)){
 				Swal.fire({
-				title: 'Pay Now3',
+				title: 'Pay Now',
 				text: `Your total parking hours is ${hours} your will pay P${(((hours - 3) * charge) + 40) }`,
 				icon: 'warning',
 				showCancelButton: true,
@@ -69,7 +69,7 @@ export default function Card({ slotName, charge, isActive, menuType, desc }){
 				})
 			}else if (((menuType === "SP" && hours > 3) && (menuType === "SP" && hours == 24))) {
 				Swal.fire({
-				title: 'Pay Now4',
+				title: 'Pay Now',
 				text: `Your total parking hours is ${hours} your will pay P5000`,
 				icon: 'warning',
 				showCancelButton: true,
@@ -77,7 +77,7 @@ export default function Card({ slotName, charge, isActive, menuType, desc }){
 				})
 			}else if (((menuType === "MP" && hours > 3) && (menuType === "MP" && hours == 24))) {
 				Swal.fire({
-				title: 'Pay Now4',
+				title: 'Pay Now',
 				text: `Your total parking hours is ${hours} your will pay P5000`,
 				icon: 'warning',
 				showCancelButton: true,
@@ -85,7 +85,7 @@ export default function Card({ slotName, charge, isActive, menuType, desc }){
 				})
 			}else if (((menuType === "LP" && hours > 3) && (menuType === "LP" && hours == 24))) {
 				Swal.fire({
-				title: 'Pay Now4',
+				title: 'Pay Now',
 				text: `Your total parking hours is ${hours} your will pay P5000`,
 				icon: 'warning',
 				showCancelButton: true,
@@ -93,7 +93,7 @@ export default function Card({ slotName, charge, isActive, menuType, desc }){
 				})
 			}else{
 				Swal.fire({
-				title: 'Pay Now5',
+				title: 'Pay Now',
 				text: `Your total parking hours is ${hours} your will pay P40`,
 				icon: 'warning',
 				showCancelButton: true,
